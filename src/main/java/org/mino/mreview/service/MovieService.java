@@ -16,6 +16,8 @@ public interface MovieService {
     Long register(MovieDTO movieDTO);
 
     PageResultDTO<MovieDTO, Object[]> getList(PageRequestDTO requestDTO);
+
+    MovieDTO getMovie(Long mno);
     //목록처리
 
     default Map<String, Object> dtoToEntity(MovieDTO movieDTO) {
